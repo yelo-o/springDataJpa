@@ -19,7 +19,4 @@ public class Comment {
     @ManyToOne
     private Post post;
 
-    public Long getId() {
-        return id;
-    }
 }
