@@ -10,4 +10,6 @@ public interface CommentRepository{
 
     List<Comment> findAll();
 
+    long count();
+
 }

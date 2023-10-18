@@ -27,5 +27,8 @@ class CommentRepositoryTest {
         //Then
         List<Comment> all = commentRepository.findAll();
         assertThat(all.size()).isEqualTo(1);
-    }
+
+        long count = commentRepository.count();
+        assertThat(count).isEqualTo(1);
+     }
 }
